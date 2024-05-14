@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Streaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="videoPlayer" class="video-js vjs-default-skin" controls autoplay>
+                <source src="http://localhost:8080/hls/mystream.m3u8" type="application/vnd.apple.mpegurl">
+            </video>
+        </div>
+        <div class="chat-container">
+            <div id="chatMessages"></div>
+            <input type="text" id="chatInput" placeholder="Type a message">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
